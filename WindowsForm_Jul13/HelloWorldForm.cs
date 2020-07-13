@@ -16,5 +16,20 @@ namespace WindowsForm_Jul13
         {
             InitializeComponent();
         }
+
+        private void ClickMeBtn_Click(object sender, EventArgs e)
+        {
+            if (WelcomeLabel.Text == "Hello, World!")
+            {
+                WelcomeLabel.Text = "Clicked!";
+            }
+            else
+            {
+
+                WelcomeLabel.Text = "Hello, World!";
+
+            }
+            
+        }
     }
 }

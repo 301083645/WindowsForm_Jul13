@@ -28,13 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.CenterLabel = new System.Windows.Forms.Label();
+            this.ClickMeBtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeLabel.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.WelcomeLabel.Location = new System.Drawing.Point(12, 72);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(776, 37);
+            this.WelcomeLabel.TabIndex = 0;
+            this.WelcomeLabel.Text = "Hello, World!";
+            this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // CenterLabel
+            // 
+            this.CenterLabel.AutoSize = true;
+            this.CenterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CenterLabel.ForeColor = System.Drawing.Color.Indigo;
+            this.CenterLabel.Location = new System.Drawing.Point(367, 213);
+            this.CenterLabel.Name = "CenterLabel";
+            this.CenterLabel.Size = new System.Drawing.Size(66, 25);
+            this.CenterLabel.TabIndex = 1;
+            this.CenterLabel.Text = "center";
+            // 
+            // ClickMeBtn
+            // 
+            this.ClickMeBtn.AutoSize = true;
+            this.ClickMeBtn.BackColor = System.Drawing.Color.DarkOrange;
+            this.ClickMeBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.ClickMeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClickMeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClickMeBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.ClickMeBtn.Location = new System.Drawing.Point(332, 298);
+            this.ClickMeBtn.Name = "ClickMeBtn";
+            this.ClickMeBtn.Size = new System.Drawing.Size(136, 41);
+            this.ClickMeBtn.TabIndex = 2;
+            this.ClickMeBtn.Text = "Click Me!";
+            this.ClickMeBtn.UseVisualStyleBackColor = false;
+            this.ClickMeBtn.Click += new System.EventHandler(this.ClickMeBtn_Click);
+            // 
+            // HelloWorldForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.ClickMeBtn);
+            this.Controls.Add(this.CenterLabel);
+            this.Controls.Add(this.WelcomeLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "HelloWorldForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hello World!";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label WelcomeLabel;
+        private System.Windows.Forms.Label CenterLabel;
+        private System.Windows.Forms.Button ClickMeBtn;
     }
 }
 
