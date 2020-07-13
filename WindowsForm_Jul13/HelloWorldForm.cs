@@ -19,17 +19,24 @@ namespace WindowsForm_Jul13
 
         private void ClickMeBtn_Click(object sender, EventArgs e)
         {
-            if (WelcomeLabel.Text == "Hello, World!")
+            if (WelcomeLabel.Text == $"Hello, {NameText.Text}")
             {
                 WelcomeLabel.Text = "Clicked!";
             }
             else
             {
 
-                WelcomeLabel.Text = "Hello, World!";
+                WelcomeLabel.Text = $"Hello, {NameText.Text}";
 
             }
+
             
+            
+        }
+
+        private void CenterLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
